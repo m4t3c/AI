@@ -1,0 +1,21 @@
+# Dataset e dati
+data/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ambienti virtuali
+venv/
+env/
+.env/
+
+# IDE
+.vscode/
+.idea/
+
+# File di sistema
+.DS_Store
+Thumbs.db
