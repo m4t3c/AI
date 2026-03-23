@@ -1,12 +1,13 @@
 import csv
 import numpy as np
-"""
-import googledrivedownloader as GoogleDriveDownloader
+from googledrivedownloader import download_file_from_google_drive
 
-GoogleDriveDownloader.download_file_from_google_drive(file_id='1SagLh5XNSV4znhlnkLRkV7zHPSDbOAqv',
+
+download_file_from_google_drive(file_id='1SagLh5XNSV4znhlnkLRkV7zHPSDbOAqv',
                                                       dest_path='./data/got.zip',
                                                       unzip=True)
-"""
+
+
 
 def gaussians_dataset(n_gaussian, n_points, mus, stds):
     """
@@ -52,7 +53,7 @@ def gaussians_dataset(n_gaussian, n_points, mus, stds):
 
     Y = np.concatenate(Y, axis=0)
 
-    tot = np.concatenate((X, np.reshape(Y, shape=(-1, 1))), axis=-1)
+    tot = np.concatenate((X, np.reshape(Y, newshape=(-1, 1))), axis=-1)
 
     np.random.seed(30101990)
     np.random.shuffle(tot)
