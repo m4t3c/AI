@@ -49,4 +49,4 @@ if __name__ == '__main__':
         X, y = two_moon_dataset(n_samples=500, noise=0.1)
         kmeans_2d(X, y, 2)
     if p.dataset == 'avengers':
-        main_kmeans_img('img/tom.png', 'img/aereo.jpg')
+        main_kmeans_img('img/tony.jpg', 'img/aereo.jpg')
